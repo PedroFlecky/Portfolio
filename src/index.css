@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+html.dark { color-scheme: dark; }
+html:not(.dark) { color-scheme: light; }
+
+body {
+  font-feature-settings: 'ss01', 'cv11';
+  background-color: #070809;
+  color: #eeeeea;
+  transition: background-color 400ms ease, color 400ms ease;
+}
+
+html:not(.dark) body {
+  background-color: #f7f7f5;
+  color: #1a1d22;
+}
+
+::selection {
+  background: rgba(122, 162, 200, 0.35);
+  color: inherit;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-6 md:px-10;
+  }
+
+  .surface {
+    @apply rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm;
+  }
+  html:not(.dark) .surface {
+    @apply border-black/5 bg-black/[0.02];
+  }
+
+  .surface-strong {
+    @apply rounded-2xl border border-white/10 bg-white/[0.035] backdrop-blur-md shadow-glass;
+  }
+  html:not(.dark) .surface-strong {
+    @apply border-black/10 bg-white/70 shadow-soft;
+  }
+
+  .hairline {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent;
+  }
+  html:not(.dark) .hairline {
+    @apply via-black/10;
+  }
+
+  .eyebrow {
+    @apply text-xs uppercase tracking-[0.22em] text-mist-400;
+  }
+
+  .link-quiet {
+    @apply text-mist-300 hover:text-mist-50 transition-colors duration-300;
+  }
+  html:not(.dark) .link-quiet {
+    @apply text-ink-700 hover:text-ink-950;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs text-mist-200;
+  }
+  html:not(.dark) .chip {
+    @apply border-black/10 bg-black/[0.03] text-ink-700;
+  }
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 999px; }
+html:not(.dark) ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.08); }

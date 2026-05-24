@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(mkdir -p \"C:\\\\Users\\\\pedro\\\\Desktop\\\\Trampo\\\\Meu\\\\Site Porfolio Curriculo\\\\public\\\\assets\\\\projects\" && ls \"C:\\\\Users\\\\pedro\\\\Downloads\" | head -30)",
+      "Bash(ls \"C:\\\\Users\\\\pedro\\\\Pictures\\\\Screenshots\" 2>/dev/null | tail -10; echo \"---\"; ls \"C:\\\\Users\\\\pedro\\\\OneDrive\\\\Imagens\\\\Capturas de tela\" 2>/dev/null | tail -10; echo \"---\"; ls -t \"C:\\\\Users\\\\pedro\\\\Downloads\"/*.png \"C:\\\\Users\\\\pedro\\\\Downloads\"/*.jpg 2>/dev/null | head -15)",
+      "Bash(cp \"C:\\\\Users\\\\pedro\\\\Pictures\\\\Screenshots\\\\Captura de tela 2026-05-24 173622.png\" \"C:\\\\Users\\\\pedro\\\\Desktop\\\\Trampo\\\\Meu\\\\Site Porfolio Curriculo\\\\public\\\\assets\\\\projects\\\\liost-01.png\")",
+      "Bash(cp \"C:\\\\Users\\\\pedro\\\\Pictures\\\\Screenshots\\\\Captura de tela 2026-05-24 173045.png\" \"C:\\\\Users\\\\pedro\\\\Desktop\\\\Trampo\\\\Meu\\\\Site Porfolio Curriculo\\\\public\\\\assets\\\\projects\\\\plannit-01.png\")",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}
