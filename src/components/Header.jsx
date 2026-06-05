@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Menu, X, MessageCircle, Linkedin } from 'lucide-react';
 import { nav, profile } from '../data/profile.js';
-import ThemeToggle from './ThemeToggle.jsx';
+import { useTheme } from '../hooks/useTheme.js';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  useTheme(); // garante .dark no <html>
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
@@ -63,7 +64,6 @@ export default function Header() {
             <MessageCircle size={13} strokeWidth={1.7} />
             WhatsApp
           </a>
-          <ThemeToggle />
           <button
             onClick={() => setOpen((v) => !v)}
             aria-label="Abrir menu"

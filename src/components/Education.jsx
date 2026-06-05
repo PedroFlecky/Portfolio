@@ -8,8 +8,8 @@ export default function Education() {
     <section id="formacao" className="relative py-24 md:py-32">
       <div className="container-x">
         <SectionTitle
-          eyebrow="Formação & Cursos"
-          title="Base acadêmica e desenvolvimento contínuo."
+          eyebrow="Estudo"
+          title="Onde aprendi (e ainda tô aprendendo)."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">

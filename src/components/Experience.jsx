@@ -7,9 +7,9 @@ export default function Experience() {
     <section id="experiencia" className="relative py-24 md:py-32">
       <div className="container-x">
         <SectionTitle
-          eyebrow="Trajetória"
-          title="Experiência profissional."
-          description="Atuação em ambientes administrativos e técnicos, com foco em organização, precisão e suporte estratégico."
+          eyebrow="Por onde eu passei"
+          title="Experiência."
+          description="Estágios em ambientes diferentes — onde aprendi como escritório de verdade funciona."
         />
 
         <div className="surface-strong px-6 md:px-10">

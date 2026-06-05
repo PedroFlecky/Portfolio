@@ -6,7 +6,7 @@ export const profile = {
   fullName: 'Pedro Felipe Costa Mesquita',
   tagline: 'Administração, Processos & Inovação Digital',
   heroSupport:
-    'Estudante de Administração com foco em processos, IA criativa e construção de soluções digitais.',
+    'Estudo Administração na UFES e ando me dividindo entre rotinas de escritório, processos e projetos digitais que faço por conta.',
   location: 'Vila Velha — ES, Brasil',
   email: 'pp347023@gmail.com',
   whatsapp: {
@@ -22,17 +22,17 @@ export const profile = {
 };
 
 export const about = {
-  eyebrow: 'Perfil',
-  title: 'Em formação, com base prática e visão moderna.',
+  eyebrow: 'Sobre',
+  title: 'Oi, eu sou o Pedro.',
   paragraphs: [
-    'Estou construindo minha trajetória na interseção entre administração, organização de processos e criatividade digital. Curso Administração na Universidade Federal do Espírito Santo e venho desenvolvendo experiência prática em rotinas administrativas, financeiras e desenvolvimento imobiliário.',
-    'Meu foco está em aprender com consistência, organizar informações com clareza e explorar soluções digitais que tornem processos mais simples, visuais e eficientes.',
-    'Cada projeto pessoal funciona como um exercício de método: transformar uma ideia ou necessidade em estrutura, e estrutura em entrega.',
+    'Tô no curso de Administração na UFES e venho cruzando duas frentes que pra mim conversam o tempo todo: a parte mais técnica — rotinas de escritório, documentação, viabilidade, finanças — e a parte mais criativa, onde uso IA pra prototipar, organizar ideias e tirar projetos do papel.',
+    'Gosto de processo limpo. Gosto de entregar coisa que faça sentido. E gosto de aprender rápido — não no sentido de tutorial assistido em 2x, mas no sentido de pegar uma ferramenta nova, quebrar ela, e descobrir onde ela encaixa no meu trabalho.',
+    'Esse portfólio é meu jeito de mostrar o que eu venho fazendo: trabalho formal, projetos pessoais, ferramentas que crio pra mim mesmo. Tudo o que tá aqui é real e tá em movimento.',
   ],
   highlights: [
-    { label: 'Formação', value: 'Bacharelado em Administração — UFES' },
-    { label: 'Localização', value: 'Vila Velha — ES' },
-    { label: 'Disponibilidade', value: 'Aberto a oportunidades' },
+    { label: 'Formação', value: 'Administração · UFES' },
+    { label: 'Onde', value: 'Vila Velha — ES' },
+    { label: 'Status', value: 'Aberto a oportunidades' },
   ],
 };
 
@@ -40,32 +40,32 @@ export const areas = [
   {
     title: 'Administração & Processos',
     description:
-      'Organização de rotinas, documentação e controle de prazos como base do meu repertório profissional.',
+      'É a base. Documentação, controle de prazos, organização — onde aprendi que processo bom é o que ninguém percebe que existe.',
   },
   {
     title: 'IA Criativa',
     description:
-      'Estudo contínuo de ferramentas de inteligência artificial aplicadas à criação, pesquisa e prototipagem.',
+      'Uso IA todo dia, mas não como muleta. Pra prototipar interface, organizar pesquisa, gerar referência visual e acelerar ideia.',
   },
   {
     title: 'Design & Comunicação Visual',
     description:
-      'Interesse por estética, hierarquia e construção de materiais claros, modernos e funcionais.',
+      'Curto coisa bem feita. Tipografia certa, hierarquia que respira, materiais que comunicam antes de ler.',
   },
   {
     title: 'Automações',
     description:
-      'Curiosidade por fluxos mais simples e escaláveis para tarefas repetitivas e organização de informações.',
+      'Se tô repetindo a mesma tarefa três vezes, já tô pensando em como ela pode rodar sozinha.',
   },
   {
     title: 'Projetos Pessoais',
     description:
-      'Ideias próprias colocadas em prática como forma de aprendizado, experimentação e evolução.',
+      'Quase tudo que aprendo, eu testo num projeto meu. É como eu seguro o conhecimento — fazendo.',
   },
   {
     title: 'Ferramentas Próprias',
     description:
-      'Pequenas ferramentas digitais para resolver necessidades reais do dia a dia.',
+      'Quando uma ferramenta pronta não resolve, eu monto a minha. Quase sempre simples, sempre prática.',
   },
 ];
 
@@ -76,7 +76,7 @@ export const experiences = [
     period: 'Ago 2024 — Nov 2025',
     location: 'Vitória — ES',
     summary:
-      'Atuação em desenvolvimento imobiliário, com apoio em cálculos de viabilidade de terrenos, organização documental, registro de notas fiscais e preparação de informações para reuniões.',
+      'Trabalhei na área de desenvolvimento imobiliário, ajudando em cálculos de viabilidade de terrenos, controle de notas fiscais, organização de documentos internos e preparação de pautas pra reuniões. Foi onde aprendi a tratar dado financeiro com cuidado e a montar material que outras pessoas vão usar pra decidir.',
     bullets: [
       'Viabilidade de terrenos',
       'Documentação interna',
@@ -91,7 +91,7 @@ export const experiences = [
     period: 'Jul 2023 — Jul 2024',
     location: 'Vila Velha — ES',
     summary:
-      'Atuação em rotinas administrativas e financeiras, apoio à organização interna, controle de prazos, elaboração de documentos e suporte a demandas internas com foco em eficiência e cordialidade.',
+      'Meu primeiro estágio. Apoio em rotinas administrativas e financeiras: planilha, prazo, documento, demanda interna. Foi aqui que peguei o ritmo de escritório e entendi a diferença que um bom controle faz no dia a dia de quem tá rodando o negócio.',
     bullets: [
       'Rotinas administrativas e financeiras',
       'Organização documental',
@@ -109,27 +109,23 @@ export const projects = [
     category: 'Estúdio Criativo com IA',
     status: 'Projeto autoral',
     shortDescription:
-      'Estúdio criativo em desenvolvimento para imagem, vídeo, identidade, sites e ferramentas com IA.',
+      'Estúdio criativo que tô construindo: identidade, sites e materiais visuais — IA como direção, não como muleta.',
     tags: ['IA Criativa', 'Direção Visual', 'Sites', 'Identidade', 'Ferramentas'],
     longDescription:
-      'A LIOST é um projeto autoral de estúdio criativo com inteligência artificial, criado para unir direção visual, tecnologia e soluções digitais em uma estrutura clara e profissional. O projeto explora criação de imagens, vídeos, identidade visual, sites e ferramentas, sempre com foco em estética coerente, processo direto e acabamento humano.',
+      'A LIOST nasceu de uma frustração simples: vi muita marca pequena travada porque "agência é caro" e "fazer sozinho fica feio". Resolvi montar um estúdio que usa IA como ferramenta de direção e prototipagem, mas com acabamento humano, sem aquele cheiro de IA genérica. A ideia é entregar imagem, vídeo, identidade, sites e pequenas ferramentas em prazo curto, sem perder coerência visual.',
     objective:
-      'Construir uma marca criativa capaz de transformar ideias em presença digital, usando IA como ferramenta de direção, prototipagem e execução.',
+      'Provar que dá pra ter presença digital profissional sem precisar de uma estrutura de agência tradicional — usando IA pra ganhar velocidade e mantendo critério humano pra ganhar qualidade.',
     demonstrates: [
       'Visão de marca',
       'Direção criativa',
       'Uso estratégico de IA',
-      'Construção de identidade visual',
+      'Construção de identidade',
       'Estruturação de oferta',
-      'Pensamento comercial e digital',
+      'Pensamento comercial',
     ],
     media: null,
     mediaPlaceholder: 'brand',
     mediaNote: 'Visual conceitual',
-    // 👇 Prints reais usados APENAS dentro do modal.
-    // Coloque os arquivos em /public/assets/projects/ e mantenha estes paths.
-    // Para adicionar mais prints, coloque o arquivo em /public/assets/projects/
-    // e acrescente um objeto { src, alt } ao array abaixo.
     gallery: [
       { src: '/assets/projects/liost-01.png', alt: 'LIOST — Home do site' },
     ],
@@ -140,24 +136,22 @@ export const projects = [
     category: 'Organização Pessoal · Produto Digital',
     status: 'Protótipo em desenvolvimento',
     shortDescription:
-      'App pessoal para organizar rotina diária, semanal e mensal com foco, clareza e prioridades.',
+      'App que tô fazendo pra organizar minha rotina — diária, semanal, mensal. Cabeça menos cheia, foco no que importa.',
     tags: ['Produto Digital', 'Organização', 'Rotina', 'UX', 'Foco'],
     longDescription:
-      'O Plannit é um aplicativo pessoal de organização criado para estruturar tarefas, lembretes, compromissos e prioridades em diferentes níveis de rotina: diária, semanal e mensal. A ideia surgiu da necessidade de manter clareza sobre o que precisa ser feito, evitar perda de foco e transformar planejamento em uma experiência visual simples e funcional.',
+      'O Plannit começou como uma necessidade minha. Eu tava perdendo tempo demais decidindo o que fazer em vez de simplesmente fazer. Construí um app que separa tarefas em três níveis (foco principal, médias, pequenas), gerencia checklist diário e mostra o que vem nas próximas 24h. A interface é minimalista de propósito — quanto menos a ferramenta puxa atenção, mais sobra pro trabalho.',
     objective:
-      'Criar uma ferramenta prática para apoiar disciplina, foco e acompanhamento de tarefas, reduzindo confusão mental e facilitando a organização do dia a dia.',
+      'Reduzir o atrito entre "decidir o que fazer" e "fazer". Transformar planejamento numa coisa rápida, visual, e que não vira mais uma tarefa.',
     demonstrates: [
       'Pensamento de produto',
-      'Organização de rotina',
       'Prototipagem de interface',
-      'Noção de experiência do usuário',
-      'Criação de ferramenta própria',
-      'Capacidade de transformar uma necessidade pessoal em sistema',
+      'Noção de UX',
+      'Resolver problema próprio em sistema',
+      'Disciplina pra terminar',
     ],
     media: null,
     mediaPlaceholder: 'app',
     mediaNote: 'Visual conceitual',
-    // 👇 Print real do app usado APENAS dentro do modal.
     gallery: [
       { src: '/assets/projects/plannit-01.png', alt: 'Plannit — Tela Hoje' },
     ],
@@ -168,18 +162,17 @@ export const projects = [
     category: 'IA Aplicada · Organização · Automação',
     status: 'Sistema pessoal em evolução',
     shortDescription:
-      'Estruturas no Claude para organizar finanças, rotina, decisões e informações recorrentes.',
+      'Agentes que montei no Claude pra cuidar de finanças, rotina e decisões — IA com contexto, não com respostas soltas.',
     tags: ['IA Aplicada', 'Organização Pessoal', 'Finanças', 'Planejamento', 'Manuais'],
     longDescription:
-      'Este projeto reúne agentes, arquivos e manuais criados no Claude para apoiar a organização pessoal e financeira. Em vez de usar IA apenas para respostas soltas, a proposta é construir sistemas com contexto, regras e estrutura própria, capazes de auxiliar no acompanhamento de rotinas, decisões, planejamento financeiro e gestão de informações importantes.',
+      'Em vez de abrir o Claude e perguntar coisa solta toda vez, montei um conjunto de agentes com manuais, regras e arquivos próprios — cada um responsável por uma frente da minha vida: finanças, rotina, planejamento, decisões. Eles têm memória, sabem o meu contexto, e me ajudam a manter consistência em vez de só responder pergunta. É a parte mais útil que descobri usando IA até agora.',
     objective:
-      'Usar inteligência artificial como uma camada de apoio para organizar informações, reduzir ruído, manter clareza de prioridades e transformar processos pessoais em fluxos mais consistentes.',
+      'Transformar IA num apoio operacional de verdade. Reduzir ruído, manter contexto, e usar inteligência artificial como camada de organização pessoal — não como assistente de pergunta avulsa.',
     demonstrates: [
-      'Uso avançado de IA no cotidiano',
-      'Criação de manuais e estruturas operacionais',
-      'Organização financeira e pessoal',
+      'Uso avançado de IA no dia a dia',
+      'Criação de manuais operacionais',
+      'Organização financeira pessoal',
       'Pensamento sistêmico',
-      'Automação cognitiva',
       'Documentação de processos',
     ],
     media: null,
@@ -193,7 +186,7 @@ export const education = [
   {
     degree: 'Bacharelado em Administração',
     institution: 'Universidade Federal do Espírito Santo — UFES',
-    period: 'Cursando — previsão 2028/1',
+    period: 'Cursando · 2028/1',
     location: 'Vitória — ES',
   },
   {
@@ -205,9 +198,9 @@ export const education = [
 ];
 
 export const courses = [
-  'Informática Avançada — Word, Excel, PowerPoint e digitação',
+  'Informática Avançada — Word, Excel, PowerPoint',
   'Inglês — básico/intermediário',
-  'Liderança para Jovens — Autoconhecimento, Desenvolvimento Social e Gestão',
+  'Liderança para Jovens',
   'Anthropic / Claude IA',
   'Microsoft Learn',
 ];
@@ -218,13 +211,13 @@ export const skills = [
   'Pontualidade',
   'Flexibilidade',
   'Trabalho em equipe',
-  'Aprendizado rápido',
+  'Aprende rápido',
   'Sistemas informatizados',
-  'Cálculos',
+  'Cálculo',
   'Documentação',
   'Comunicação interna',
   'Disciplina',
-  'Desenvolvimento contínuo',
+  'Sempre em evolução',
 ];
 
 export const nav = [

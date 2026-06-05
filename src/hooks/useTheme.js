@@ -1,27 +1,15 @@
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect } from 'react';
 
-const STORAGE_KEY = 'pf-theme';
-
-function getInitial() {
-  if (typeof window === 'undefined') return 'dark';
-  const saved = localStorage.getItem(STORAGE_KEY);
-  if (saved === 'light' || saved === 'dark') return saved;
-  return 'dark'; // default
-}
-
+// Site usa apenas modo escuro — paleta premium foi feita para isso.
+// Mantemos esse hook só para garantir que a classe `.dark` esteja sempre no <html>.
 export function useTheme() {
-  const [theme, setTheme] = useState(getInitial);
-
   useEffect(() => {
     const root = document.documentElement;
-    if (theme === 'dark') root.classList.add('dark');
-    else root.classList.remove('dark');
-    localStorage.setItem(STORAGE_KEY, theme);
-  }, [theme]);
-
-  const toggle = useCallback(() => {
-    setTheme((t) => (t === 'dark' ? 'light' : 'dark'));
+    root.classList.add('dark');
+    try {
+      localStorage.setItem('pf-theme', 'dark');
+    } catch {}
   }, []);
 
-  return { theme, toggle };
+  return { theme: 'dark', toggle: () => {} };
 }

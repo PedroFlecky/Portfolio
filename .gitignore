@@ -8,3 +8,6 @@ dist-ssr
 !.env.example
 .DS_Store
 Thumbs.db
+
+# Originais do personagem (versões otimizadas vivem em public/character/)
+/Personagem/

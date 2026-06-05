@@ -12,9 +12,9 @@ export default function Areas() {
     <section id="areas" className="relative pt-16 md:pt-20 pb-24 md:pb-32">
       <div className="container-x">
         <SectionTitle
-          eyebrow="Campos de Desenvolvimento"
-          title="Entre organização, tecnologia e criatividade aplicada."
-          description="Frentes que conectam minha base administrativa ao interesse por tecnologia, criação e melhoria de processos."
+          eyebrow="No que tô me desenvolvendo"
+          title="Onde administração e tecnologia se cruzam."
+          description="Frentes que venho explorando — algumas são minha base, outras são onde eu mais venho aprendendo."
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">

@@ -7,9 +7,9 @@ export default function Skills() {
     <section id="competencias" className="relative py-24 md:py-32">
       <div className="container-x">
         <SectionTitle
-          eyebrow="Competências"
-          title="Atributos profissionais."
-          description="Princípios e habilidades que orientam a forma como conduzo cada projeto."
+          eyebrow="Como eu trabalho"
+          title="O que me define no dia a dia."
+          description="Princípios e hábitos que carrego pra dentro de qualquer projeto."
         />
 
         <div className="flex flex-wrap gap-2.5">
