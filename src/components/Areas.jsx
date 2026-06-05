@@ -10,7 +10,20 @@ const icons = [Layers, Sparkles, Palette, Workflow, FlaskConical, Wrench];
 export default function Areas() {
   return (
     <section id="areas" className="relative pt-16 md:pt-20 pb-24 md:pb-32">
-      <div className="container-x">
+      <div className="container-x relative">
+        {/* Personagem apontando pros cards */}
+        <motion.img
+          src="/character/apontando.png"
+          alt=""
+          aria-hidden
+          draggable={false}
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          className="hidden md:block absolute -top-4 right-2 lg:right-8 w-28 lg:w-36 h-auto pointer-events-none select-none drop-shadow-[0_20px_30px_rgba(0,0,0,0.55)]"
+        />
+
         <SectionTitle
           eyebrow="No que tô me desenvolvendo"
           title="Onde administração e tecnologia se cruzam."
@@ -28,15 +41,15 @@ export default function Areas() {
                 viewport={{ once: true, amount: 0.25 }}
                 transition={{ duration: 0.55, delay: i * 0.04, ease: [0.22, 1, 0.36, 1] }}
                 whileHover={{ y: -4 }}
-                className="group surface p-6 md:p-7 transition-colors hover:border-accent/30 dark:hover:border-accent/30"
+                className="group surface p-6 md:p-7 transition-colors hover:border-accent/30"
               >
-                <div className="mb-6 inline-flex h-10 w-10 items-center justify-center rounded-lg border border-black/5 dark:border-white/10 text-accent">
+                <div className="mb-6 inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-accent">
                   <Icon size={17} strokeWidth={1.6} />
                 </div>
-                <h3 className="font-display text-lg md:text-xl tracking-tight text-ink-900 dark:text-mist-50">
+                <h3 className="font-display text-lg md:text-xl tracking-tight text-mist-50">
                   {a.title}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-ink-600 dark:text-mist-300">
+                <p className="mt-3 text-sm leading-relaxed text-mist-300">
                   {a.description}
                 </p>
               </motion.div>
