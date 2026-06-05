@@ -1,53 +1,57 @@
 // ============================================================
 // CONFIG DOS PERSONAGENS
 // ============================================================
-// Edita as posições, tamanhos e poses de cada personagem aqui.
+// Edita posições, tamanhos e poses aqui.
 // Salva o arquivo, o site recarrega sozinho no navegador.
 //
-// REGRA DE OURO:
-// - Use PORCENTAGEM (%) pra posição funcionar igual em qualquer tela.
-//   Ex: left-[35%], left-1/2, left-[26%]
-//   → escala proporcionalmente com a tela
+// >>> AGORA TEM DOIS CONTROLES SEPARADOS: `desktop` e `mobile` <<<
 //
-// - Use PIXEL (px) só pra valores PEQUENOS (ex: -top-[10px])
-//   ou pra TOP (que não varia tanto com a largura da tela).
-//   → left-[270px] vai funcionar no desktop mas SOMER no celular
+//   desktop : posição em telas grandes (computador, monitor, TV)
+//   mobile  : posição em telas pequenas (celular)
 //
-// --- GUIA ---
+//   Mexer no `desktop` NÃO afeta o mobile.
+//   Mexer no `mobile` NÃO afeta o desktop.
+//   São totalmente independentes.
 //
-// src       : caminho da imagem. Opções em /public/character/:
-//             acenando, acenando-2, ajustando, apontando,
-//             atras-card, mexendo-pc, olhando-por-cima,
-//             peek, sentado-pc
+// --- COMO ESCREVER A POSIÇÃO ---
 //
-// width     : largura. Ex:
-//               'w-48'        → 192px (Tailwind padrão)
-//               'w-[200px]'   → 200px exato
+//   top    / -top    → distância do topo (negativo = sobe)
+//   left   / -left   → distância da esquerda
+//   right  / -right  → distância da direita
 //
-// position  : onde fica. Classes absolute. Ex:
-//               '-top-[40px]'                  → 40px pra cima
-//               'left-[35%]'                   → 35% da esquerda (escala)
-//               'left-1/2 -translate-x-1/2'    → centralizado
+//   Valores:
+//     left-[270px]   → 270 pixels exatos
+//     left-[35%]     → 35% da largura (acompanha o tamanho da tela)
+//     left-1/2       → bem no meio
+//     -translate-x-1/2 → usado junto com left-1/2 pra centralizar
 //
-// flip      : true espelha horizontalmente.
-// show      : false esconde o personagem.
+//   DICA: no celular (tela estreita), prefira % ou pixels pequenos.
+//         Pixel grande tipo left-[700px] some pra fora da tela no celular.
+//
+// --- OUTROS CAMPOS ---
+//   src   : caminho da imagem (/character/...)
+//   width : tamanho. Ex 'w-48', 'w-56', 'w-[200px]'
+//   flip  : true espelha horizontalmente
+//   show  : false esconde o personagem
+//   hideOnMobile : true esconde SÓ no celular
 // ============================================================
 
 export const characters = {
   // ---------- HERO (topo do site) ----------
+  // Hero fica numa coluna do grid (não usa desktop/mobile). Só ajusta o width.
   hero: {
     src: '/character/acenando.png',
     width: 'w-72',
     flip: false,
     show: true,
-    // hero não usa position absolute (fica numa coluna do grid).
   },
 
   // ---------- SOBRE ----------
   about: {
     src: '/character/mexendo-pc.png',
     width: 'w-56',
-    position: '-top-36 -right-2',
+    desktop: '-top-36 -right-2',
+    mobile: '-top-[150px] right-2',
     flip: false,
     show: true,
   },
@@ -56,7 +60,8 @@ export const characters = {
   areas: {
     src: '/character/apontando.png',
     width: 'w-[260px]',
-    position: '-top-[10px] left-[700px]',
+    desktop: '-top-[10px] left-[700px]',
+    mobile: '-top-[10px] left-[55%]',
     flip: true, // aponta pra esquerda
     show: true,
   },
@@ -65,7 +70,8 @@ export const characters = {
   experience: {
     src: '/character/sentado-pc.png',
     width: 'w-52',
-    position: '-top-[264px] left-[48%]',
+    desktop: '-top-[264px] left-[550px]',
+    mobile: '-top-[150px] left-[55%]',
     flip: false,
     show: true,
   },
@@ -74,7 +80,8 @@ export const characters = {
   projects: {
     src: '/character/ajustando.png',
     width: 'w-48',
-    position: 'top-[-80px] left-[26%] -translate-x-1/2',
+    desktop: 'top-[-80px] left-[300px] -translate-x-1/2',
+    mobile: 'top-[-50px] left-1/2 -translate-x-1/2',
     flip: false,
     show: true,
   },
@@ -83,23 +90,39 @@ export const characters = {
   contact: {
     src: '/character/olhando-por-cima.png',
     width: 'w-56',
-    position: '-top-36 left-1/2 -translate-x-[95%] md:-translate-x-1/2',
+    desktop: '-top-36 left-[270px] -translate-x-[65%]',
+    mobile: '-top-36 left-[30px]',
     flip: false,
     show: true,
   },
 };
 
 // ============================================================
-// HELPER: monta className final pra um personagem absolute
+// HELPER (não precisa editar)
+// Aplica `mobile` como base e `desktop` a partir de telas grandes (lg:).
 // ============================================================
+function toDesktop(classStr) {
+  return (classStr || '')
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((cls) => `md:${cls}`)
+    .join(' ');
+}
+
 export function characterClass(key, extraClasses = '') {
   const c = characters[key];
   if (!c || !c.show) return '';
 
+  // suporta tanto o formato novo (desktop/mobile) quanto o antigo (position)
+  const pos = (c.desktop || c.mobile)
+    ? `${c.mobile || ''} ${toDesktop(c.desktop || '')}`
+    : (c.position || '');
+
   return [
     'absolute pointer-events-none select-none drop-shadow-[0_20px_30px_rgba(0,0,0,0.55)]',
+    c.hideOnMobile ? 'hidden md:block' : '',
     c.width,
-    c.position || '',
+    pos,
     extraClasses,
   ].filter(Boolean).join(' ');
 }
