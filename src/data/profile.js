@@ -107,7 +107,7 @@ export const projects = [
     id: 'liost',
     name: 'LIOST',
     category: 'Estúdio Criativo com IA',
-    status: 'Projeto autoral',
+    status: 'Em construção',
     shortDescription:
       'Estúdio criativo que tô construindo. Identidade, sites, vídeo e materiais visuais com IA na direção.',
     tags: ['IA Criativa', 'Direção Visual', 'Sites', 'Identidade', 'Ferramentas'],
@@ -134,7 +134,7 @@ export const projects = [
     id: 'plannit',
     name: 'Plannit',
     category: 'Organização Pessoal · Produto Digital',
-    status: 'Protótipo em desenvolvimento',
+    status: 'Protótipo',
     shortDescription:
       'App pessoal pra organizar minha rotina diária, semanal e mensal. Foco no que importa, cabeça menos cheia.',
     tags: ['Produto Digital', 'Organização', 'Rotina', 'UX', 'Foco'],
@@ -158,9 +158,9 @@ export const projects = [
   },
   {
     id: 'agentes-ia',
-    name: 'Agentes de IA para Organização Pessoal',
+    name: 'Agentes de IA Pessoais',
     category: 'IA Aplicada · Organização · Automação',
-    status: 'Sistema pessoal em evolução',
+    status: 'Em uso',
     shortDescription:
       'Agentes que montei no Claude pra cuidar de finanças, rotina, decisão e informação recorrente.',
     tags: ['IA Aplicada', 'Organização Pessoal', 'Finanças', 'Planejamento', 'Manuais'],
