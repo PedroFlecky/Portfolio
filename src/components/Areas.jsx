@@ -14,7 +14,7 @@ export default function Areas() {
         <SectionTitle
           eyebrow="No que tô me desenvolvendo"
           title="Onde administração e tecnologia se cruzam."
-          description="Frentes que venho explorando — algumas são minha base, outras são onde eu mais venho aprendendo."
+          description="Frentes que venho explorando. Umas são meu pão de cada dia, outras são onde eu mais ando aprendendo."
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">

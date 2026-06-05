@@ -31,7 +31,7 @@ export default function Hero() {
               className="eyebrow mb-6 flex items-center gap-3"
             >
               <span className="h-px w-8 bg-current opacity-50" />
-              Portfólio · Currículo Visual
+              Pedro Felipe · 2026
             </motion.div>
 
             <motion.h1

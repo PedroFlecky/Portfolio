@@ -9,7 +9,7 @@ export default function Experience() {
         <SectionTitle
           eyebrow="Por onde eu passei"
           title="Experiência."
-          description="Estágios em ambientes diferentes — onde aprendi como escritório de verdade funciona."
+          description="Dois estágios em ambientes bem diferentes. Foi onde eu peguei o ritmo de escritório de verdade."
         />
 
         <div className="surface-strong px-6 md:px-10">

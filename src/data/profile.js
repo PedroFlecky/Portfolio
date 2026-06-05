@@ -6,8 +6,8 @@ export const profile = {
   fullName: 'Pedro Felipe Costa Mesquita',
   tagline: 'Administração, Processos & Inovação Digital',
   heroSupport:
-    'Estudo Administração na UFES e ando me dividindo entre rotinas de escritório, processos e projetos digitais que faço por conta.',
-  location: 'Vila Velha — ES, Brasil',
+    'Estudo Administração na UFES e venho fazendo projetos digitais por conta. Gosto de coisa bem feita e de aprender mexendo.',
+  location: 'Vila Velha, ES',
   email: 'pp347023@gmail.com',
   whatsapp: {
     raw: '5591991652478',
@@ -25,13 +25,13 @@ export const about = {
   eyebrow: 'Sobre',
   title: 'Oi, eu sou o Pedro.',
   paragraphs: [
-    'Tô no curso de Administração na UFES e venho cruzando duas frentes que pra mim conversam o tempo todo: a parte mais técnica — rotinas de escritório, documentação, viabilidade, finanças — e a parte mais criativa, onde uso IA pra prototipar, organizar ideias e tirar projetos do papel.',
-    'Gosto de processo limpo. Gosto de entregar coisa que faça sentido. E gosto de aprender rápido — não no sentido de tutorial assistido em 2x, mas no sentido de pegar uma ferramenta nova, quebrar ela, e descobrir onde ela encaixa no meu trabalho.',
-    'Esse portfólio é meu jeito de mostrar o que eu venho fazendo: trabalho formal, projetos pessoais, ferramentas que crio pra mim mesmo. Tudo o que tá aqui é real e tá em movimento.',
+    'Tenho 21 anos, sou de Vila Velha, e curso Administração na UFES. Já passei por dois estágios e venho tocando projetos próprios em paralelo, a maioria envolvendo design, IA e organização.',
+    'Meu jeito de trabalhar é simples. Pego a coisa, mexo, quebro, vejo onde ela serve. Aprendo melhor fazendo do que assistindo. E quase tudo que eu uso pra estudar acaba virando um projeto pessoal pra fixar.',
+    'Esse site é onde eu junto o que tô fazendo agora. Trabalho formal, projetos meus, ferramentas que monto pra organizar minha rotina. Tudo aqui tá em uso.',
   ],
   highlights: [
     { label: 'Formação', value: 'Administração · UFES' },
-    { label: 'Onde', value: 'Vila Velha — ES' },
+    { label: 'Onde', value: 'Vila Velha, ES' },
     { label: 'Status', value: 'Aberto a oportunidades' },
   ],
 };
@@ -40,43 +40,43 @@ export const areas = [
   {
     title: 'Administração & Processos',
     description:
-      'É a base. Documentação, controle de prazos, organização — onde aprendi que processo bom é o que ninguém percebe que existe.',
+      'De onde eu venho. Documentação, prazo, organização. Quando o processo tá bem feito, ninguém percebe que ele existe.',
   },
   {
     title: 'IA Criativa',
     description:
-      'Uso IA todo dia, mas não como muleta. Pra prototipar interface, organizar pesquisa, gerar referência visual e acelerar ideia.',
+      'Uso todo dia pra prototipar interface, organizar pesquisa, gerar referência visual e tirar ideia do papel mais rápido.',
   },
   {
     title: 'Design & Comunicação Visual',
     description:
-      'Curto coisa bem feita. Tipografia certa, hierarquia que respira, materiais que comunicam antes de ler.',
+      'Curto coisa bem feita visualmente. Tipografia certa, hierarquia que respira, peça que comunica sem precisar de manual.',
   },
   {
     title: 'Automações',
     description:
-      'Se tô repetindo a mesma tarefa três vezes, já tô pensando em como ela pode rodar sozinha.',
+      'Se a mesma tarefa apareceu três vezes na minha semana, eu já tô pensando como ela vira fluxo.',
   },
   {
     title: 'Projetos Pessoais',
     description:
-      'Quase tudo que aprendo, eu testo num projeto meu. É como eu seguro o conhecimento — fazendo.',
+      'Praticamente tudo que eu aprendo, eu testo num projeto meu. É assim que o conteúdo gruda na cabeça.',
   },
   {
     title: 'Ferramentas Próprias',
     description:
-      'Quando uma ferramenta pronta não resolve, eu monto a minha. Quase sempre simples, sempre prática.',
+      'Quando o que existe não me serve, eu monto a minha. Geralmente coisa pequena, sempre funcional.',
   },
 ];
 
 export const experiences = [
   {
     company: 'Mocelin Engenharia LTDA',
-    role: 'Estagiário — Desenvolvimento Imobiliário',
-    period: 'Ago 2024 — Nov 2025',
-    location: 'Vitória — ES',
+    role: 'Estagiário em Desenvolvimento Imobiliário',
+    period: 'Ago 2024 a Nov 2025',
+    location: 'Vitória, ES',
     summary:
-      'Trabalhei na área de desenvolvimento imobiliário, ajudando em cálculos de viabilidade de terrenos, controle de notas fiscais, organização de documentos internos e preparação de pautas pra reuniões. Foi onde aprendi a tratar dado financeiro com cuidado e a montar material que outras pessoas vão usar pra decidir.',
+      'Atuei na área de desenvolvimento imobiliário. Mexi com cálculo de viabilidade de terreno, controle de nota fiscal, organização de documento interno e preparação de pauta pra reunião. Foi onde aprendi a respeitar dado financeiro e a pensar em quem ia ler o que eu produzia.',
     bullets: [
       'Viabilidade de terrenos',
       'Documentação interna',
@@ -87,11 +87,11 @@ export const experiences = [
   },
   {
     company: 'Cookie do Nicão LTDA',
-    role: 'Estagiário — Auxiliar Administrativo e Financeiro',
-    period: 'Jul 2023 — Jul 2024',
-    location: 'Vila Velha — ES',
+    role: 'Estagiário Administrativo e Financeiro',
+    period: 'Jul 2023 a Jul 2024',
+    location: 'Vila Velha, ES',
     summary:
-      'Meu primeiro estágio. Apoio em rotinas administrativas e financeiras: planilha, prazo, documento, demanda interna. Foi aqui que peguei o ritmo de escritório e entendi a diferença que um bom controle faz no dia a dia de quem tá rodando o negócio.',
+      'Meu primeiro estágio. Cuidei de rotina administrativa e financeira: planilha, prazo, documento, demanda interna. Foi aqui que peguei o ritmo de escritório.',
     bullets: [
       'Rotinas administrativas e financeiras',
       'Organização documental',
@@ -109,12 +109,12 @@ export const projects = [
     category: 'Estúdio Criativo com IA',
     status: 'Projeto autoral',
     shortDescription:
-      'Estúdio criativo que tô construindo: identidade, sites e materiais visuais — IA como direção, não como muleta.',
+      'Estúdio criativo que tô construindo. Identidade, sites, vídeo e materiais visuais com IA na direção.',
     tags: ['IA Criativa', 'Direção Visual', 'Sites', 'Identidade', 'Ferramentas'],
     longDescription:
-      'A LIOST nasceu de uma frustração simples: vi muita marca pequena travada porque "agência é caro" e "fazer sozinho fica feio". Resolvi montar um estúdio que usa IA como ferramenta de direção e prototipagem, mas com acabamento humano, sem aquele cheiro de IA genérica. A ideia é entregar imagem, vídeo, identidade, sites e pequenas ferramentas em prazo curto, sem perder coerência visual.',
+      'A LIOST nasceu de uma percepção minha. Vi muita marca pequena que não tem orçamento de agência, mas também não consegue fazer sozinha sem cair no amadorismo. Montei um estúdio que entrega identidade, sites, vídeo e materiais visuais usando IA pra acelerar o processo e mantendo direção humana pro acabamento. A ideia é parecer estúdio sério sem precisar virar agência.',
     objective:
-      'Provar que dá pra ter presença digital profissional sem precisar de uma estrutura de agência tradicional — usando IA pra ganhar velocidade e mantendo critério humano pra ganhar qualidade.',
+      'Provar que dá pra entregar trabalho criativo profissional com IA na direção e gente no acabamento, sem precisar de estrutura inteira de agência.',
     demonstrates: [
       'Visão de marca',
       'Direção criativa',
@@ -127,7 +127,7 @@ export const projects = [
     mediaPlaceholder: 'brand',
     mediaNote: 'Visual conceitual',
     gallery: [
-      { src: '/assets/projects/liost-01.png', alt: 'LIOST — Home do site' },
+      { src: '/assets/projects/liost-01.png', alt: 'LIOST: home do site' },
     ],
   },
   {
@@ -136,12 +136,12 @@ export const projects = [
     category: 'Organização Pessoal · Produto Digital',
     status: 'Protótipo em desenvolvimento',
     shortDescription:
-      'App que tô fazendo pra organizar minha rotina — diária, semanal, mensal. Cabeça menos cheia, foco no que importa.',
+      'App pessoal pra organizar minha rotina diária, semanal e mensal. Foco no que importa, cabeça menos cheia.',
     tags: ['Produto Digital', 'Organização', 'Rotina', 'UX', 'Foco'],
     longDescription:
-      'O Plannit começou como uma necessidade minha. Eu tava perdendo tempo demais decidindo o que fazer em vez de simplesmente fazer. Construí um app que separa tarefas em três níveis (foco principal, médias, pequenas), gerencia checklist diário e mostra o que vem nas próximas 24h. A interface é minimalista de propósito — quanto menos a ferramenta puxa atenção, mais sobra pro trabalho.',
+      'O Plannit começou porque eu tava perdendo tempo demais decidindo o que fazer antes de fazer. Montei um app que separa as tarefas em três níveis (uma principal, três médias, cinco pequenas), tem checklist diário e mostra o que vem nas próximas 24h. A interface é seca de propósito pra não competir com o que precisa ser feito.',
     objective:
-      'Reduzir o atrito entre "decidir o que fazer" e "fazer". Transformar planejamento numa coisa rápida, visual, e que não vira mais uma tarefa.',
+      'Tirar atrito entre planejar e executar. Abrir o app tem que ser rápido e claro, nunca virar mais uma tarefa.',
     demonstrates: [
       'Pensamento de produto',
       'Prototipagem de interface',
@@ -153,7 +153,7 @@ export const projects = [
     mediaPlaceholder: 'app',
     mediaNote: 'Visual conceitual',
     gallery: [
-      { src: '/assets/projects/plannit-01.png', alt: 'Plannit — Tela Hoje' },
+      { src: '/assets/projects/plannit-01.png', alt: 'Plannit: tela Hoje' },
     ],
   },
   {
@@ -162,12 +162,12 @@ export const projects = [
     category: 'IA Aplicada · Organização · Automação',
     status: 'Sistema pessoal em evolução',
     shortDescription:
-      'Agentes que montei no Claude pra cuidar de finanças, rotina e decisões — IA com contexto, não com respostas soltas.',
+      'Agentes que montei no Claude pra cuidar de finanças, rotina, decisão e informação recorrente.',
     tags: ['IA Aplicada', 'Organização Pessoal', 'Finanças', 'Planejamento', 'Manuais'],
     longDescription:
-      'Em vez de abrir o Claude e perguntar coisa solta toda vez, montei um conjunto de agentes com manuais, regras e arquivos próprios — cada um responsável por uma frente da minha vida: finanças, rotina, planejamento, decisões. Eles têm memória, sabem o meu contexto, e me ajudam a manter consistência em vez de só responder pergunta. É a parte mais útil que descobri usando IA até agora.',
+      'Cansei de abrir o Claude e perguntar coisa solta toda hora. Montei um time de agentes com manual, regra e arquivo próprio, cada um cuidando de uma frente da minha vida: finanças, rotina, planejamento, decisão. Eles têm memória, sabem o meu contexto e me ajudam a manter consistência. É o uso de IA que mais me serviu até hoje.',
     objective:
-      'Transformar IA num apoio operacional de verdade. Reduzir ruído, manter contexto, e usar inteligência artificial como camada de organização pessoal — não como assistente de pergunta avulsa.',
+      'Usar IA como apoio operacional de verdade, com contexto e memória. Diminuir ruído, manter clareza, organizar minha vida pessoal num sistema que funciona.',
     demonstrates: [
       'Uso avançado de IA no dia a dia',
       'Criação de manuais operacionais',
@@ -185,21 +185,21 @@ export const projects = [
 export const education = [
   {
     degree: 'Bacharelado em Administração',
-    institution: 'Universidade Federal do Espírito Santo — UFES',
-    period: 'Cursando · 2028/1',
-    location: 'Vitória — ES',
+    institution: 'Universidade Federal do Espírito Santo (UFES)',
+    period: 'Cursando · previsão 2028/1',
+    location: 'Vitória, ES',
   },
   {
     degree: 'Ensino Médio',
     institution: 'Sistema de Ensino Amazônia',
     period: 'Concluído em 2022',
-    location: 'Ananindeua — PA',
+    location: 'Ananindeua, PA',
   },
 ];
 
 export const courses = [
-  'Informática Avançada — Word, Excel, PowerPoint',
-  'Inglês — básico/intermediário',
+  'Informática Avançada: Word, Excel, PowerPoint',
+  'Inglês: básico e intermediário',
   'Liderança para Jovens',
   'Anthropic / Claude IA',
   'Microsoft Learn',

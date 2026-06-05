@@ -43,7 +43,7 @@ export default function Contact() {
             Bora trocar uma ideia?
           </h2>
           <p className="mt-5 max-w-xl mx-auto text-mist-300 text-base md:text-lg leading-relaxed">
-            Oportunidade, projeto, parceria ou só uma conversa boa — me chama.
+            Oportunidade, projeto, parceria ou só uma boa conversa. Me chama.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 max-w-2xl mx-auto">
@@ -85,7 +85,7 @@ export default function Contact() {
 
         <footer className="mt-16 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-mist-400">
           <p>© {new Date().getFullYear()} {profile.fullName}</p>
-          <p>Feito com café, IA e bastante teimosia.</p>
+          <p>Construído por mim, do zero.</p>
         </footer>
       </div>
     </section>
