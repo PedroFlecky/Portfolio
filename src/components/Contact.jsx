@@ -6,8 +6,8 @@ import { characters, characterClass } from '../data/characters.js';
 export default function Contact() {
   const c = characters.contact;
   return (
-    <section id="contato" className="relative py-24 md:py-36 overflow-hidden">
-      <div aria-hidden className="pointer-events-none absolute inset-0">
+    <section id="contato" className="relative py-24 md:py-36">
+      <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -bottom-40 left-1/2 -translate-x-1/2 h-[34rem] w-[60rem] rounded-full bg-accent/10 blur-[140px]" />
       </div>
 
