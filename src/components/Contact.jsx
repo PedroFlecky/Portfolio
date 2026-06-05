@@ -10,33 +10,33 @@ export default function Contact() {
       </div>
 
       <div className="container-x relative">
-        {/* Wrapper relativo pra posicionar o personagem atrás do card */}
-        <div className="relative">
-          {/* Personagem peek atrás do canto superior direito do card */}
+        <div className="relative max-w-3xl mx-auto">
+          {/* Personagem olhando por cima do card, apontando pra baixo */}
           <motion.img
-            src="/character/peek.png"
+            src="/character/olhando-por-cima.png"
             alt=""
             aria-hidden
             draggable={false}
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: -16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.4 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute z-0 pointer-events-none select-none drop-shadow-[0_25px_30px_rgba(0,0,0,0.55)]
-                       w-24 md:w-28 lg:w-32
-                       -top-20 md:-top-24
-                       right-10 md:right-16 lg:right-24"
+            className="absolute z-20 pointer-events-none select-none drop-shadow-[0_18px_25px_rgba(0,0,0,0.6)]
+                       w-40 md:w-48 lg:w-56
+                       -top-24 md:-top-28 lg:-top-32
+                       left-1/2 -translate-x-1/2"
           />
 
+          {/* Card de contato com borda mais definida */}
           <motion.div
             initial={{ opacity: 0, y: 14 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7 }}
-            className="relative z-10 surface-strong px-6 md:px-14 py-14 md:py-20 text-center"
+            className="relative z-10 rounded-3xl border-2 border-white/15 bg-ink-900/70 backdrop-blur-xl px-6 md:px-14 pt-16 md:pt-20 pb-14 md:pb-16 text-center shadow-[0_30px_80px_-30px_rgba(0,0,0,0.7)]"
           >
             <div className="eyebrow mb-5">Contato</div>
-            <h2 className="font-display text-3xl md:text-5xl tracking-tight text-mist-50 max-w-3xl mx-auto leading-[1.1]">
+            <h2 className="font-display text-3xl md:text-5xl tracking-tight text-mist-50 max-w-3xl mx-auto leading-[1.05]">
               Bora trocar uma ideia?
             </h2>
             <p className="mt-5 max-w-xl mx-auto text-mist-300 text-base md:text-lg leading-relaxed">

@@ -8,7 +8,7 @@ export default function Skills() {
       <div className="container-x relative">
         {/* Personagem acenando no canto direito */}
         <motion.img
-          src="/character/acenando-2.png"
+          src="/character/ajustando.png"
           alt=""
           aria-hidden
           draggable={false}
@@ -16,7 +16,7 @@ export default function Skills() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="hidden md:block absolute -top-2 right-4 lg:right-10 w-24 lg:w-28 h-auto pointer-events-none select-none drop-shadow-[0_20px_30px_rgba(0,0,0,0.55)]"
+          className="hidden md:block absolute -top-4 right-4 lg:right-12 w-36 lg:w-44 h-auto pointer-events-none select-none drop-shadow-[0_20px_30px_rgba(0,0,0,0.55)]"
         />
 
         <SectionTitle

@@ -21,7 +21,8 @@ export default function Areas() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="hidden md:block absolute -top-4 right-2 lg:right-8 w-28 lg:w-36 h-auto pointer-events-none select-none drop-shadow-[0_20px_30px_rgba(0,0,0,0.55)]"
+          style={{ transform: 'scaleX(-1)' }}
+          className="hidden md:block absolute -top-6 right-2 lg:right-8 w-40 lg:w-52 h-auto pointer-events-none select-none drop-shadow-[0_20px_30px_rgba(0,0,0,0.55)]"
         />
 
         <SectionTitle
