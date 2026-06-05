@@ -4,8 +4,14 @@
 // Edita as posições, tamanhos e poses de cada personagem aqui.
 // Salva o arquivo, o site recarrega sozinho no navegador.
 //
-// ATENÇÃO: aqui está sem variação por tela (mobile/desktop iguais).
-// Em telas pequenas, valores em pixel podem ficar fora da tela.
+// REGRA DE OURO:
+// - Use PORCENTAGEM (%) pra posição funcionar igual em qualquer tela.
+//   Ex: left-[35%], left-1/2, left-[26%]
+//   → escala proporcionalmente com a tela
+//
+// - Use PIXEL (px) só pra valores PEQUENOS (ex: -top-[10px])
+//   ou pra TOP (que não varia tanto com a largura da tela).
+//   → left-[270px] vai funcionar no desktop mas SOMER no celular
 //
 // --- GUIA ---
 //
@@ -16,11 +22,11 @@
 //
 // width     : largura. Ex:
 //               'w-48'        → 192px (Tailwind padrão)
-//               'w-[200px]'   → 200px exato (qualquer número)
+//               'w-[200px]'   → 200px exato
 //
 // position  : onde fica. Classes absolute. Ex:
 //               '-top-[40px]'                  → 40px pra cima
-//               'left-[300px]'                 → 300px da esquerda
+//               'left-[35%]'                   → 35% da esquerda (escala)
 //               'left-1/2 -translate-x-1/2'    → centralizado
 //
 // flip      : true espelha horizontalmente.
@@ -59,7 +65,7 @@ export const characters = {
   experience: {
     src: '/character/sentado-pc.png',
     width: 'w-52',
-    position: '-top-[264px] left-[550px]',
+    position: '-top-[264px] left-[48%]',
     flip: false,
     show: true,
   },
@@ -68,7 +74,7 @@ export const characters = {
   projects: {
     src: '/character/ajustando.png',
     width: 'w-48',
-    position: 'top-[-80px] left-[300px] -translate-x-1/2',
+    position: 'top-[-80px] left-[26%] -translate-x-1/2',
     flip: false,
     show: true,
   },
@@ -77,7 +83,7 @@ export const characters = {
   contact: {
     src: '/character/olhando-por-cima.png',
     width: 'w-56',
-    position: '-top-36 left-[270px] -translate-x-[65%]',
+    position: '-top-36 left-[35%] -translate-x-[65%]',
     flip: false,
     show: true,
   },
