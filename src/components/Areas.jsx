@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { areas } from '../data/profile.js';
+import { characters, characterClass } from '../data/characters.js';
 import SectionTitle from './SectionTitle.jsx';
 import {
   Layers, Sparkles, Palette, Workflow, FlaskConical, Wrench,
@@ -8,22 +9,25 @@ import {
 const icons = [Layers, Sparkles, Palette, Workflow, FlaskConical, Wrench];
 
 export default function Areas() {
+  const c = characters.areas;
+
   return (
     <section id="areas" className="relative pt-16 md:pt-20 pb-24 md:pb-32">
       <div className="container-x relative">
-        {/* Personagem apontando pros cards */}
-        <motion.img
-          src="/character/apontando.png"
-          alt=""
-          aria-hidden
-          draggable={false}
-          initial={{ opacity: 0, x: 40 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          style={{ transform: 'scaleX(-1)' }}
-          className="hidden md:block absolute -top-8 right-44 lg:right-56 w-32 lg:w-40 h-auto pointer-events-none select-none drop-shadow-[0_20px_30px_rgba(0,0,0,0.55)]"
-        />
+        {c.show && (
+          <motion.img
+            src={c.src}
+            alt=""
+            aria-hidden
+            draggable={false}
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            style={c.flip ? { transform: 'scaleX(-1)' } : undefined}
+            className={characterClass('areas')}
+          />
+        )}
 
         <SectionTitle
           eyebrow="No que tô me desenvolvendo"

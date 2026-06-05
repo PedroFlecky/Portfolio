@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion';
 import { experiences } from '../data/profile.js';
+import { characters, characterClass } from '../data/characters.js';
 import SectionTitle from './SectionTitle.jsx';
 import ExperienceCard from './ExperienceCard.jsx';
 
 export default function Experience() {
+  const c = characters.experience;
+
   return (
     <section id="experiencia" className="relative py-24 md:py-32">
       <div className="container-x relative">
@@ -20,21 +23,20 @@ export default function Experience() {
             ))}
           </div>
 
-          {/* Personagem sentado literalmente NA PONTA superior direita do card */}
-          <motion.img
-            src="/character/sentado-pc.png"
-            alt=""
-            aria-hidden
-            draggable={false}
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.25 }}
-            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="hidden lg:block absolute z-20 pointer-events-none select-none drop-shadow-[0_25px_30px_rgba(0,0,0,0.6)]
-                       w-44 xl:w-52
-                       -top-24 xl:-top-28
-                       left-4 xl:left-10"
-          />
+          {c.show && (
+            <motion.img
+              src={c.src}
+              alt=""
+              aria-hidden
+              draggable={false}
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+              style={c.flip ? { transform: 'scaleX(-1)' } : undefined}
+              className={characterClass('experience', 'z-20')}
+            />
+          )}
         </div>
       </div>
     </section>

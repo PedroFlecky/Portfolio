@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import { MessageCircle, Mail, MapPin, Linkedin } from 'lucide-react';
 import { profile } from '../data/profile.js';
+import { characters, characterClass } from '../data/characters.js';
 
 export default function Contact() {
+  const c = characters.contact;
   return (
     <section id="contato" className="relative py-24 md:py-36 overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-0">
@@ -11,21 +13,21 @@ export default function Contact() {
 
       <div className="container-x relative">
         <div className="relative max-w-3xl mx-auto">
-          {/* Personagem olhando por cima do card, apontando pra baixo */}
-          <motion.img
-            src="/character/olhando-por-cima.png"
-            alt=""
-            aria-hidden
-            draggable={false}
-            initial={{ opacity: 0, y: -16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute z-20 pointer-events-none select-none drop-shadow-[0_18px_25px_rgba(0,0,0,0.6)]
-                       w-40 md:w-48 lg:w-56
-                       -top-28 md:-top-32 lg:-top-36
-                       left-1/2 -translate-x-[65%]"
-          />
+          {/* Personagem (controlado via src/data/characters.js) */}
+          {c.show && (
+            <motion.img
+              src={c.src}
+              alt=""
+              aria-hidden
+              draggable={false}
+              initial={{ opacity: 0, y: -16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              style={c.flip ? { transform: 'scaleX(-1)' } : undefined}
+              className={characterClass('contact', 'z-20')}
+            />
+          )}
 
           {/* Card de contato com borda mais definida */}
           <motion.div

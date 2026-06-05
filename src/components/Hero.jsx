@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDownRight, MessageCircle } from 'lucide-react';
 import { profile } from '../data/profile.js';
+import { characters } from '../data/characters.js';
 
 export default function Hero() {
   return (
@@ -107,12 +108,13 @@ export default function Hero() {
               {/* halo atrás do personagem */}
               <div aria-hidden className="absolute inset-0 -m-8 rounded-full bg-accent/20 blur-3xl" />
               <motion.img
-                src="/character/acenando.png"
+                src={characters.hero.src}
                 alt="Pedro Felipe acenando"
                 draggable={false}
                 animate={{ y: [0, -8, 0] }}
                 transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut' }}
-                className="relative w-44 sm:w-56 lg:w-72 h-auto select-none drop-shadow-[0_30px_40px_rgba(0,0,0,0.5)]"
+                style={characters.hero.flip ? { transform: 'scaleX(-1)' } : undefined}
+                className={`relative ${characters.hero.width} h-auto select-none drop-shadow-[0_30px_40px_rgba(0,0,0,0.5)]`}
               />
               {/* "balãozinho" discreto */}
               <motion.div
