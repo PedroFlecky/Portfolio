@@ -33,7 +33,7 @@ export default function Experience() {
             className="hidden lg:block absolute z-20 pointer-events-none select-none drop-shadow-[0_25px_30px_rgba(0,0,0,0.6)]
                        w-44 xl:w-52
                        -top-24 xl:-top-28
-                       right-4 xl:right-10"
+                       left-4 xl:left-10"
           />
         </div>
       </div>

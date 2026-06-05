@@ -23,8 +23,8 @@ export default function Contact() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="absolute z-20 pointer-events-none select-none drop-shadow-[0_18px_25px_rgba(0,0,0,0.6)]
                        w-40 md:w-48 lg:w-56
-                       -top-24 md:-top-28 lg:-top-32
-                       left-1/2 -translate-x-1/2"
+                       -top-28 md:-top-32 lg:-top-36
+                       left-1/2 -translate-x-[65%]"
           />
 
           {/* Card de contato com borda mais definida */}
