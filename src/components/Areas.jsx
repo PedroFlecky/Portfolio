@@ -20,11 +20,10 @@ export default function Areas() {
             alt=""
             aria-hidden
             draggable={false}
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: 40, scaleX: c.flip ? -1 : 1 }}
+            whileInView={{ opacity: 1, x: 0, scaleX: c.flip ? -1 : 1 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            style={c.flip ? { transform: 'scaleX(-1)' } : undefined}
             className={characterClass('areas')}
           />
         )}

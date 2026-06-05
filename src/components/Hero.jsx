@@ -111,9 +111,8 @@ export default function Hero() {
                 src={characters.hero.src}
                 alt="Pedro Felipe acenando"
                 draggable={false}
-                animate={{ y: [0, -8, 0] }}
+                animate={{ y: [0, -8, 0], scaleX: characters.hero.flip ? -1 : 1 }}
                 transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut' }}
-                style={characters.hero.flip ? { transform: 'scaleX(-1)' } : undefined}
                 className={`relative ${characters.hero.width} h-auto select-none drop-shadow-[0_30px_40px_rgba(0,0,0,0.5)]`}
               />
               {/* "balãozinho" discreto */}

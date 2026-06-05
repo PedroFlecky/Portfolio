@@ -40,11 +40,10 @@ export default function About() {
                 src={c.src}
                 alt="Pedro Felipe mexendo no computador"
                 draggable={false}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 16, scaleX: c.flip ? -1 : 1 }}
+                whileInView={{ opacity: 1, y: 0, scaleX: c.flip ? -1 : 1 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-                style={c.flip ? { transform: 'scaleX(-1)' } : undefined}
                 className={characterClass('about', 'z-20')}
               />
             )}
@@ -56,8 +55,7 @@ export default function About() {
                   src={c.src}
                   alt="Pedro Felipe mexendo no computador"
                   draggable={false}
-                  style={c.flip ? { transform: 'scaleX(-1)' } : undefined}
-                  className="w-52 h-auto select-none drop-shadow-[0_25px_35px_rgba(0,0,0,0.5)]"
+                  className={`w-52 h-auto select-none drop-shadow-[0_25px_35px_rgba(0,0,0,0.5)] ${c.flip ? 'scale-x-[-1]' : ''}`}
                 />
               </div>
             )}

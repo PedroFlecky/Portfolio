@@ -29,11 +29,10 @@ export default function Experience() {
               alt=""
               aria-hidden
               draggable={false}
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 18, scaleX: c.flip ? -1 : 1 }}
+              whileInView={{ opacity: 1, y: 0, scaleX: c.flip ? -1 : 1 }}
               viewport={{ once: true, amount: 0.25 }}
               transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              style={c.flip ? { transform: 'scaleX(-1)' } : undefined}
               className={characterClass('experience', 'z-20')}
             />
           )}

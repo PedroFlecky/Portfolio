@@ -20,11 +20,10 @@ export default function Contact() {
               alt=""
               aria-hidden
               draggable={false}
-              initial={{ opacity: 0, y: -16 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: -16, scaleX: c.flip ? -1 : 1 }}
+              whileInView={{ opacity: 1, y: 0, scaleX: c.flip ? -1 : 1 }}
               viewport={{ once: true, amount: 0.4 }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              style={c.flip ? { transform: 'scaleX(-1)' } : undefined}
               className={characterClass('contact', 'z-20')}
             />
           )}

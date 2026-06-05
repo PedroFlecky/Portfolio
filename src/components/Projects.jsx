@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { projects } from '../data/profile.js';
-import { characters } from '../data/characters.js';
+import { characters, characterClass } from '../data/characters.js';
 import SectionTitle from './SectionTitle.jsx';
 import ProjectCard from './ProjectCard.jsx';
 import ProjectModal from './ProjectModal.jsx';
@@ -26,22 +26,19 @@ export default function Projects() {
         </div>
 
         {c.show && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-8 flex justify-center"
-          >
-            <img
+          <div className="relative h-48 md:h-56 lg:h-64 mt-4">
+            <motion.img
               src={c.src}
               alt=""
               aria-hidden
               draggable={false}
-              style={c.flip ? { transform: 'scaleX(-1)' } : undefined}
-              className={`${c.width} h-auto pointer-events-none select-none drop-shadow-[0_25px_35px_rgba(0,0,0,0.55)]`}
+              initial={{ opacity: 0, y: 20, scaleX: c.flip ? -1 : 1 }}
+              whileInView={{ opacity: 1, y: 0, scaleX: c.flip ? -1 : 1 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+              className={characterClass('projects')}
             />
-          </motion.div>
+          </div>
         )}
       </div>
 

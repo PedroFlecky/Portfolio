@@ -52,7 +52,7 @@ export const characters = {
   about: {
     src: '/character/mexendo-pc.png',
     width: 'w-48 xl:w-56',
-    position: '-top-32 xl:-top-36 right-0 xl:-right-4',
+    position: '-top-30 xl:-top-36 right-0 xl:-right-2',
     flip: false,
     show: true,
     hideOn: 'mobile', // aparece versão mobile centralizada
@@ -61,8 +61,8 @@ export const characters = {
   // ---------- CAMPOS DE DESENVOLVIMENTO (Areas) ----------
   areas: {
     src: '/character/apontando.png',
-    width: 'w-32 lg:w-40',
-    position: '-top-8 right-44 lg:right-56',
+    width: 'w-[260px]',
+    position: '-top-64 xl:-top-[10px] left-[700px] x1:left-128',
     flip: true, // aponta pra esquerda
     show: true,
     hideOn: 'mobile',
@@ -72,7 +72,7 @@ export const characters = {
   experience: {
     src: '/character/sentado-pc.png',
     width: 'w-44 xl:w-52',
-    position: '-top-24 xl:-top-28 left-4 xl:left-10',
+    position: '-top-64 xl:-top-[264px] left-[550px] x1:left-128',
     flip: false,
     show: true,
     hideOn: 'mobile',
@@ -82,7 +82,11 @@ export const characters = {
   projects: {
     src: '/character/ajustando.png',
     width: 'w-32 md:w-40 lg:w-48',
-    // projetos não usa absolute, fica centralizado abaixo dos cards
+    position: 'top-[-80px] left-[300px] -translate-x-1/2',
+    // Padrão: centralizado no topo da área abaixo dos cards.
+    // Pra subir (chegar perto dos cards): -top-[Xpx] negativo, ex: '-top-[40px]'
+    // Pra ir pra esquerda: left-1/2 -translate-x-[80%]  (aumenta o %)
+    // Pra ir pra direita: left-1/2 -translate-x-[20%]  (diminui o %)
     flip: false,
     show: true,
   },
@@ -91,7 +95,7 @@ export const characters = {
   contact: {
     src: '/character/olhando-por-cima.png',
     width: 'w-40 md:w-48 lg:w-56',
-    position: '-top-28 md:-top-32 lg:-top-36 left-1/2 -translate-x-[65%]',
+    position: '-top-28 md:-top-1 lg:-top-36 left-[270px] -translate-x-[65%]',
     flip: false,
     show: true,
   },
