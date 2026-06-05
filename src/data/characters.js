@@ -82,11 +82,8 @@ export const characters = {
   projects: {
     src: '/character/ajustando.png',
     width: 'w-32 md:w-40 lg:w-48',
-    position: 'top-[-80px] left-[300px] -translate-x-1/2',
-    // Padrão: centralizado no topo da área abaixo dos cards.
-    // Pra subir (chegar perto dos cards): -top-[Xpx] negativo, ex: '-top-[40px]'
-    // Pra ir pra esquerda: left-1/2 -translate-x-[80%]  (aumenta o %)
-    // Pra ir pra direita: left-1/2 -translate-x-[20%]  (diminui o %)
+    // Mobile: centralizado. Desktop (md:): valor que você configurou.
+    position: 'top-[-80px] left-1/2 md:left-[300px] -translate-x-1/2',
     flip: false,
     show: true,
   },
@@ -95,7 +92,8 @@ export const characters = {
   contact: {
     src: '/character/olhando-por-cima.png',
     width: 'w-40 md:w-48 lg:w-56',
-    position: '-top-28 md:-top-1 lg:-top-36 left-[270px] -translate-x-[65%]',
+    // Mobile: centralizado em cima do card. Desktop (md:/lg:): o que você configurou.
+    position: '-top-28 lg:-top-36 left-1/2 md:left-[270px] -translate-x-1/2 md:-translate-x-[65%]',
     flip: false,
     show: true,
   },
