@@ -48,18 +48,6 @@ export default function About() {
               />
             )}
 
-            {/* Versão mobile do personagem */}
-            {c.show && (
-              <div className="lg:hidden flex justify-center mb-6">
-                <img
-                  src={c.src}
-                  alt="Pedro Felipe mexendo no computador"
-                  draggable={false}
-                  className={`w-52 h-auto select-none drop-shadow-[0_25px_35px_rgba(0,0,0,0.5)] ${c.flip ? 'scale-x-[-1]' : ''}`}
-                />
-              </div>
-            )}
-
             <div className="surface-strong p-6 md:p-8 relative z-10">
               <div className="eyebrow mb-6">Em síntese</div>
               <dl className="divide-y divide-white/5">
