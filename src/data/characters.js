@@ -90,7 +90,7 @@ export const characters = {
   contact: {
     src: '/character/olhando-por-cima.png',
     width: 'w-56',
-    desktop: '-top-36 left-1/2 -translate-x-1/2',
+    desktop: '-top-36 left-[500px]',
     mobile: '-top-36 left-[30px]',
     flip: false,
     show: true,

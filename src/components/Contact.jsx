@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion';
 import { MessageCircle, Mail, MapPin, Linkedin } from 'lucide-react';
 import { profile } from '../data/profile.js';
-import { characters, characterClass } from '../data/characters.js';
+import Character from './Character.jsx';
 
 export default function Contact() {
-  const c = characters.contact;
   return (
     <section id="contato" className="relative py-24 md:py-36">
       <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -14,19 +13,7 @@ export default function Contact() {
       <div className="container-x relative">
         <div className="relative max-w-3xl mx-auto">
           {/* Personagem (controlado via src/data/characters.js) */}
-          {c.show && (
-            <motion.img
-              src={c.src}
-              alt=""
-              aria-hidden
-              draggable={false}
-              initial={{ opacity: 0, y: -16, scaleX: c.flip ? -1 : 1 }}
-              whileInView={{ opacity: 1, y: 0, scaleX: c.flip ? -1 : 1 }}
-              viewport={{ once: true, amount: 0.4 }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className={characterClass('contact', 'z-20')}
-            />
-          )}
+          <Character section="contact" extra="z-20" />
 
           {/* Card de contato com borda mais definida */}
           <motion.div

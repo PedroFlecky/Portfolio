@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { areas } from '../data/profile.js';
-import { characters, characterClass } from '../data/characters.js';
 import SectionTitle from './SectionTitle.jsx';
+import Character from './Character.jsx';
 import {
   Layers, Sparkles, Palette, Workflow, FlaskConical, Wrench,
 } from 'lucide-react';
@@ -9,24 +9,10 @@ import {
 const icons = [Layers, Sparkles, Palette, Workflow, FlaskConical, Wrench];
 
 export default function Areas() {
-  const c = characters.areas;
-
   return (
     <section id="areas" className="relative pt-16 md:pt-20 pb-24 md:pb-32">
       <div className="container-x relative">
-        {c.show && (
-          <motion.img
-            src={c.src}
-            alt=""
-            aria-hidden
-            draggable={false}
-            initial={{ opacity: 0, x: 40, scaleX: c.flip ? -1 : 1 }}
-            whileInView={{ opacity: 1, x: 0, scaleX: c.flip ? -1 : 1 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className={characterClass('areas')}
-          />
-        )}
+        <Character section="areas" />
 
         <SectionTitle
           eyebrow="No que tô me desenvolvendo"

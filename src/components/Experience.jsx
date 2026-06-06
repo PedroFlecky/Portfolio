@@ -1,12 +1,9 @@
-import { motion } from 'framer-motion';
 import { experiences } from '../data/profile.js';
-import { characters, characterClass } from '../data/characters.js';
 import SectionTitle from './SectionTitle.jsx';
 import ExperienceCard from './ExperienceCard.jsx';
+import Character from './Character.jsx';
 
 export default function Experience() {
-  const c = characters.experience;
-
   return (
     <section id="experiencia" className="relative py-24 md:py-32">
       <div className="container-x relative">
@@ -23,19 +20,7 @@ export default function Experience() {
             ))}
           </div>
 
-          {c.show && (
-            <motion.img
-              src={c.src}
-              alt=""
-              aria-hidden
-              draggable={false}
-              initial={{ opacity: 0, y: 18, scaleX: c.flip ? -1 : 1 }}
-              whileInView={{ opacity: 1, y: 0, scaleX: c.flip ? -1 : 1 }}
-              viewport={{ once: true, amount: 0.25 }}
-              transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              className={characterClass('experience', 'z-20')}
-            />
-          )}
+          <Character section="experience" extra="z-20" />
         </div>
       </div>
     </section>
